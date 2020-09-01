@@ -53,7 +53,6 @@ class QuestionsViewController: UIViewController {
         
         let currentAnswer = currentAnswers[currentIndex]
         answersChoosen.append(currentAnswer)
-        
         nextQuestion()
     }
     
@@ -68,7 +67,7 @@ class QuestionsViewController: UIViewController {
     }
     
     @IBAction func rangedAnswerButtonPressed() {
-        let index = lrintf(rangedSlider.value * 1)
+        let index = Int(rangedSlider.value)
         answersChoosen.append(currentAnswers[index])
         nextQuestion()
     }

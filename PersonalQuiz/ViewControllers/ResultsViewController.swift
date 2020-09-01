@@ -30,7 +30,6 @@ extension ResultsViewController {
         }
         let sortedAnimalCount = animalCount.sorted(by: {$0.value > $1.value})
         let chosenAnimal = sortedAnimalCount.first!.key
-        
         animalLabel.text = "Вы - \(chosenAnimal.rawValue)!"
         textAnimalLabel.text = chosenAnimal.definition
     }
